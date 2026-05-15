@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Gantt - Metodología Incremental</title>
+    
+    <style>
+        /* Contenedor principal de la tabla */
+        .gantt-container {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px auto;
+            max-width: 95%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        /* Título del diagrama */
+        .gantt-container h2 {
+            text-align: center;
+            color: #2c3e50;
+            padding: 20px 0;
+            margin: 0;
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #edf2f7;
+            font-size: 1.5em;
+        }
+
+        /* Estructura general de la tabla */
+        .gantt-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* Bordes y espaciado de celdas */
+        .gantt-table th, .gantt-table td {
+            border: 1px solid #e2e8f0;
+            padding: 14px;
+            font-size: 0.95em;
+        }
+
+        /* Estilos del encabezado principal (Gris oscuro) */
+        .gantt-table thead th {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Ancho para la columna de las tareas */
+        .col-tarea {
+            width: 35%;
+        }
+
+        /* Alineación del texto de las tareas */
+        .tarea {
+            text-align: left;
+            padding-left: 20px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        /* Separadores visuales de cada Incremento (Fondo Plata) */
+        .header-inc td {
+            background-color: #b0bec5;
+            color: #1a252f;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 15px;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        /* Bloques de duración - Incremento 1 (Rojo Vibrante) */
+        .active-inc1 {
+            background-color: #d32f2f;
+            border-radius: 4px;
+        }
+
+        /* Bloques de duración - Incremento 2 (Gris Plata Oscuro) */
+        .active-inc2 {
+            background-color: #78909c;
+            border-radius: 4px;
+        }
+
+        /* Efecto visual al pasar el mouse por encima */
+        .gantt-table tbody tr:hover:not(.header-inc) {
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gantt-container">
+        <h2>Diagrama de Gantt - Metodología Incremental</h2>
+        <table class="gantt-table">
+            <thead>
+                <tr>
+                    <th rowspan="2" class="col-tarea">Incrementos / Tareas</th>
+                    <th colspan="4">Mayo 2026</th>
+                    <th colspan="2">Junio 2026</th>
+                </tr>
+                <tr>
+                    <th>Sem 1</th>
+                    <th>Sem 2</th>
+                    <th>Sem 3</th>
+                    <th>Sem 4</th>
+                    <th>Sem 1</th>
+                    <th>Sem 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="header-inc">
+                    <td colspan="7">INCREMENTO 1 (Módulos Base / Core del Sistema)</td>
+                </tr>
+                <tr>
+                    <td class="tarea">Requerimientos y Diseño Base</td>
+                    <td class="active-inc1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tarea">Desarrollo y Codificación</td>
+                    <td></td>
+                    <td class="active-inc1"></td>
+                    <td class="active-inc1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tarea">Pruebas e Integración</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="active-inc1"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="header-inc">
+                    <td colspan="7">INCREMENTO 2 (Módulos Secundarios y Extensiones)</td>
+                </tr>
+                <tr>
+                    <td class="tarea">Análisis y Diseño Inc 2</td>
+                    <td></td>
+                    <td class="active-inc2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tarea">Desarrollo Inc 2</td>
+                    <td></td>
+                    <td></td>
+                    <td class="active-inc2"></td>
+                    <td class="active-inc2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tarea">Pruebas e Integración Inc 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="active-inc2"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
