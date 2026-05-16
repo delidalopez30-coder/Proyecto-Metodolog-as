@@ -1,0 +1,64 @@
+/* 1. Configuración general con fondo degradado técnico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Degradado sutil de azul tecnológico oscuro a azul acero */
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%); 
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Tarjeta principal (Sin cuadros internos molestos) */
+.contenedor-inicio {
+    text-align: center;
+    background-color: #ffffff; /* Blanco puro para un contraste limpio */
+    padding: 50px 60px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* Sombra elegante */
+    max-width: 550px; /* Controla el ancho para que se vea ordenado */
+    width: 90%;
+}
+
+/* 3. Estilos para los textos */
+.contenedor-inicio h1 {
+    color: #0f172a; /* Azul casi negro, muy formal */
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.contenedor-inicio p {
+    color: #475569; /* Gris pizarra legible */
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* 4. El Botón: ¡Grande, Técnico y Muy Llamativo! */
+.boton-ingreso {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #7bb99f; /* Rojo brillante técnico (Vibrant Rose/Red) */
+    color: #ffffff;
+    padding: 16px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    text-transform: uppercase; /* Fuerza las mayúsculas para impacto visual */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
+}
+
+/* 5. Efecto interactivo del botón */
+.boton-ingreso:hover {
+    background-color: #4b66a0; /* Variación de rojo más oscuro al apuntar */
+    transform: translateY(-3px); /* Elevación suave */
+    box-shadow: 0 8px 25px rgba(225, 29, 72, 0.6); /* Brillo expandido */
+}

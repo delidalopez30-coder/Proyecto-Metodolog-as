@@ -1,0 +1,91 @@
+/* Estilos independientes para páginas de contenido largo */
+body {
+    background: linear-gradient(135deg, #566e94 0%, #495c75 100%);
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Centra el bloque de contenido en la pantalla */
+header, div, ol, ul, p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fuerza el centrado perfecto del título */
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Controla el tamaño de la imagen esquema */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+}
+
+/* Estilo básico para tus enlaces para que no se vean morados nativos */
+a {
+    color: #48c9b0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =======================================================
+   CÓDIGO EXCLUSIVO PARA LOS BOTONES DE LAS LISTAS
+   ======================================================= */
+
+/* 1. Limpia el contenedor de la lista y lo centra */
+ol {
+    list-style: none !important; /* Quita los números definitivamente */
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;        /* Espacio de separación entre botones */
+    max-width: 480px !important; /* Controla el ancho para que no se estiren tanto */
+    margin: 30px auto !important; /* Centra todo el bloque en la pantalla */
+}
+
+/* 2. Quita márgenes molestos de los títulos internos de la lista */
+ol h2, ol li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+/* 3. Transforma tus enlaces actuales en botones reales */
+ol h2 a, ol li a {
+    display: block !important;
+    text-align: center !important;
+    background-color: #e2ede8 !important; /* Tono menta/plata suave */
+    color: #2c3e50 !important;           /* Texto oscuro legible */
+    padding: 14px 20px !important;
+    border-radius: 8px !important;       /* Bordes redondeados sutiles */
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;    /* Quita el subrayado del enlace */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12) !important; /* Sombra de volumen */
+    transition: all 0.3s ease !important; /* Animación suave */
+}
+
+/* 4. Animación interactiva al pasar el mouse (Hover) */
+ol h2 a:hover, ol li a:hover {
+    background-color: #48c9b0 !important; /* Cambia al verde menta brillante */
+    color: #ffffff !important;           /* Texto en blanco puro */
+    transform: translateY(-3px) !important; /* Eleva el botón sutilmente */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.22) !important; /* Aumenta la sombra */
+    text-decoration: none !important;
+}
+

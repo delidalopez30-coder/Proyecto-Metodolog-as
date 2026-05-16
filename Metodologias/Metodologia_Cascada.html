@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metodologia Cascada</title>
+    <title>Modelo en Cascada</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    
+<body class="cascada" style="min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
 
- <h1 style="text-align: center;">MODELO EN CASCADA</h2>
-    <h2>Características</h3>
-    <ul>
-        <li>Secuencia Lógica: No hay solapamiento entre fases (Requisitos -> Diseño -> Implementación -> Pruebas > Mantenimiento).</li>
-        <li>Documentación Rigurosa: Cada fase genera un entregable formal que actúa como base para la siguiente.</li>
-        <li>Requisitos Estáticos: Se definen y "congelan" totalmente al inicio del proyecto; no admite cambios sobre la marcha.</li>
-        <li>Hitos Claros: Facilita el control del cronograma y presupuesto mediante metas bien definidas.</li>
+    <div style="background-color: rgba(255, 255, 255, 0.92); max-width: 1200px; width: 100%; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
         
-    </ul>
+        <h1 style="text-align: center; margin-top: 0; margin-bottom: 30px; color: #030813; font-size: 28px;">
+            MODELO EN CASCADA
+        </h1>
 
-<div style="text-align: center; margin-top: 20px;">
-        <img src="/img/Modelo cascada.png" alt="Diagrama del Modelo de cascada" style="width: 750px; height: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
+            
+            <div style="flex: 1; max-width: 50%; text-align: justify;">
+                <h2 style="margin-top: 0; margin-bottom: 20px; color: #2c3e50;">Características</h2>
+                
+                <ul style="padding-left: 20px; line-height: 1.6; color: #333;">
+                    <li style="margin-bottom: 12px;"><strong>Secuencia Lógica:</strong> No hay solapamiento entre fases (Requisitos -> Diseño -> Implementación -> Pruebas -> Mantenimiento).</li>
+                    <li style="margin-bottom: 12px;"><strong>Documentación Rigurosa:</strong> Cada fase genera un entregable formal que actúa como base para la siguiente.</li>
+                    <li style="margin-bottom: 12px;"><strong>Requisitos Estáticos:</strong> Se definen y "congelan" totalmente al inicio del proyecto; no admite cambios sobre la marcha.</li>
+                    <li style="margin-bottom: 12px;"><strong>Hitos Claros:</strong> Facilita el control del cronograma y presupuesto mediante metas bien definidas.</li>
+                </ul>
+            </div>
+
+            <div style="flex: 1; max-width: 50%; text-align: center;">
+                <img src="/img/Modelo cascada.png" alt="Diagrama del Modelo Cascada" style="width: 100%; max-width: 550px; height: auto; display: block; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+
+        </div>
+
     </div>
 
 </body>

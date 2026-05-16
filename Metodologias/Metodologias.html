@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Tecnológico-Metodologias</title>
-    <link rel="stylesheet" href="/css/Metodologías.css">
-    <meta name="autor"content= "Tlga. Delida Yuliza López">
-    <meta name = "description" content="Análisis de metodologías de desarrollo y cronograma de actividades para el proyecto de gestión de una cafetería(Diagrama de Gantt)">
-    <meta name="keywords" content="html,html5,Css,JavaScript ">
-
-
-</head>
-<body> 
-<header>
-    <h1 style="text-align: center;">METODOLOGIAS</h1>
-    <p>Son un marco de trabajo estructurado que contiene un conjunto de principios, prácticas, fases y herramientas utilizadas para planificar, ejecutar y controlar un proyecto desde su inicio hasta su entrega.
-        Es el mapa que sigue un equipo para asegurarse de que el producto final se construya de forma organizada, eficiente y con calidad, evitando asi trabajar "a ciegas".
-    </p>
-    <p>Estas metodologías son importantes ya que sin una de ellas, los proyectos suelen caer en el caos. Es decir; 
-    sufren retrasos, costos imprevistos o malentendidos con el cliente. Implementarlas, ayuda a:
-    <ul>
-        <li>Organizar el trabajo, ya que divide un proyecto grande en tareas y etapas más pequeñas y manejables.</li>
-        <li>Mejorar la comunicación, por que define claramente quién hace qué, cómo y cuándo.</li>
-        <li>Gestionar el riesgo, dado que permite detectar problemas a tiempo en lugar de descubrirlos al final del proyecto.</li>
-        <li>Asegurar la calidad, ya que establece momentos específicos para hacer pruebas y revisiones antes de entregar.</li>
-    </ul>
-     El mundo de las metodologías se divide en:
-
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="/img/Metodologías.png" alt="Diagrama del Modelo incremental" style="width: 750px; height: auto;">
-    </div>
-
-    Y asi podemos seleccionar la mejor metodología que se adapte a nuestros proyecto, entre las opciones anteriores se despliegan los 
-    siguientes modelos, los cuales son:
-</p>
-
-    <ol>
-        <h2><li><a href="Metodologia_Espiral.html">Metodologia_Espiral</li></h2>
-        <h2><li><a href="Metodologia_Agil.html">Metodologia_Agil</a></li></h2>
-        <h2><li><a href="Metodologia_Cascada.html">Metodologia_Cascada</a></li></h2>
-        <h2><li><a href="Metodologia_Incremental.html">Metodologia_Incremental</a></li></h2>
-        <h2><li><a href="Metodologia_Tradicional.html">Metodologia_Tradicional</a></li></h2>
-    </ol>
-
-    <p>Acontinuación se encuentra la explicación de la metodología seleccionada para el proyecto,
-        y el diagrama de gantt. </p>
-
-    <ol>
-        <h2><li><a href="Metologia_Seleccionada_para_el_proyecto.html">Metologia_Seleccionada_para_el_proyecto</li></h2>
-        <h2><li><a href="Diagrama_de_Gantt.html">Diagrama_de_Gantt</a></li></h2>
-    </ol>
-
-</header>
-
+    <title>Proyecto Tecnológico - Metodologías</title>
+    <link rel="stylesheet" href="/css/Paginas.css">
     
+    <style>
+        /* PARA QUE LA PÁGINA SE A COMODARSE DE ARRIBA HACIA ABAJO */
+        body {
+            display: block !important;
+            height: auto !important;
+            min-height: 100vh !important;
+            padding: 40px 20px !important;
+            box-sizing: border-box !important;
+        }
+
+        /* TÍTULO CENTRADO */
+        h1 {
+            text-align: center !important;
+            width: 100% !important;
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+            display: block !important;
+        }
+
+        /* LIMITA DE ANCHO PARA TEXTOS */
+        header, div, ol, ul, p {
+            max-width: 850px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        /* CENTRA LA IMAGEN */
+        img {
+            display: block !important;
+            max-width: 100% !important;
+            height: auto !important;
+            margin: 25px auto !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>METODOLOGÍAS</h1>
+        <p>Son un marco de trabajo estructurado que contiene un conjunto de principios, prácticas, fases y herramientas utilizadas para planificar, ejecutar y controlar un proyecto desde su inicio hasta su entrega. Es el mapa que sigue un equipo para asegurarse de que el producto final se construya de forma organizada, eficiente y con calidad, evitando así trabajar "a ciegas".</p>
+        
+        <p>Estas metodologías son importantes ya que sin una de ellas, los proyectos suelen caer en el caos. Es decir; sufren retrasos, costos imprevistos o malentendidos con el cliente. Implementarlas, ayuda a:</p>
+        
+        <ul>
+            <li><strong>Organizar el trabajo:</strong> ya que divide un proyecto grande en tareas y etapas más pequeñas y manejables.</li>
+            <li><strong>Mejorar la comunicación:</strong> porque define claramente quién hace qué, cómo y cuándo.</li>
+            <li><strong>Gestionar el riesgo:</strong> dado que permite detectar problemas a tiempo en lugar de descubrirlos al final del proyecto.</li>
+            <li><strong>Asegurar la calidad:</strong> ya que establece momentos específicos para hacer pruebas y revisiones antes de entregar.</li>
+        </ul>
+        
+        <p>El mundo de las metodologías se divide en:</p>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="/img/Metodologías.png" alt="Diagrama del Modelo incremental" style="width: 750px; height: auto;">
+        </div>
+
+        <p>Y asi podemos seleccionar la mejor metodología que se adapte a nuestro proyecto, entre las opciones anteriores se despliegan los siguientes modelos, los cuales son:</p>
+    </header>
+
+    <ol>
+        <h2><li><a href="Metodologia_Espiral.html">Metodologia Espiral</a></li></h2>
+        <h2><li><a href="Metodologia_Agil.html">Metodologia Agil</a></li></h2>
+        <h2><li><a href="Metodologia_Cascada.html">Metodologia Cascada</a></li></h2>
+        <h2><li><a href="Metodologia_Incremental.html">Metodologia Incremental</a></li></h2>
+        <h2><li><a href="Metodologia_Tradicional.html">Metodologia Tradicional</a></li></h2>
+    </ol>
+
+    <p>Acontinuación se encuentra la explicación de la metodología seleccionada para el proyecto, y el diagrama de gantt. </p>
+
+    <ol>
+        <h2><li><a href="Metologia_Seleccionada_para_el_proyecto.html">Metodologia Seleccionada para el proyecto</a></li></h2>
+        <h2><li><a href="Diagrama_de_Gantt.html">Diagrama de Gantt</a></li></h2>
+    </ol>
+
 </body>
 </html>
